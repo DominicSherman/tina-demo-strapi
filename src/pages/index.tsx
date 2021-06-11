@@ -76,11 +76,7 @@ export default function Home({ homepageContent, blogs }) {
             )}
           </InlineImage>
           <div className="z-10 pt-10 flex flex-col">
-            <InlineText
-              focusRing={false}
-              name="heroText"
-              style={{ fontWeight: 700, fontSize: 30 }}
-            >
+            <InlineText focusRing={false} name="heroText">
               <h1 className="text-3xl font-semibold text-center">
                 {content.heroText}
               </h1>
