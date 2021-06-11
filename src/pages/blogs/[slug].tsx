@@ -2,6 +2,10 @@ import markdownToHtml from 'markdownToHtml';
 import { queryStrapi, STRAPI_BASE_URL } from 'strapi-service';
 
 export default function Post({ blog }) {
+  if (!blog) {
+    return null;
+  }
+
   const { headerImage, title, description, content } = blog;
 
   return (
