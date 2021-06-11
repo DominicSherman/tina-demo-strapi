@@ -3,8 +3,6 @@ const withMDX = require('@next/mdx')({
   extension: /\.mdx?$/,
 });
 
-require('dotenv').config();
-
 module.exports = withMDX({
   env: {
     STRAPI_URL: process.env.STRAPI_URL,
